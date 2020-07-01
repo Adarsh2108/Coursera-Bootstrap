@@ -37,3 +37,8 @@
 .navbar-dark{
     background-color: #512DA8;
 }
+
+.radio-inline{
+    margin-right: 20px;
+    text-align: justify;
+}
