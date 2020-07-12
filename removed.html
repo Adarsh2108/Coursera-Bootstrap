@@ -27,3 +27,56 @@
     <h3>Alberto Somayya <small>Executive Chef</small></h3>
     <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
 </div>
+
+<!--Reserve Table Separate Form-->
+
+<div class="row row-content align-items-center justify-content-center" id="reserveCard">
+    <div class="col-12 col-sm-8">
+        <div class="card">
+            <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+            <div class="card-body">
+                <form>
+                    <div class="form-group row">
+                        <label for="numGuest" class="col-12 col-md-2 col-form-label">Number of Guests</label>
+                        <div class="col-12 col-md-10">
+                            <label class="form-check-label radio-inline" for="numGuest1"><input type="radio" id="numGuest1" name="numGuest"> 1  </label>
+                            <label class="form-check-label radio-inline" for="numGuest2"><input type="radio" id="numGuest2" name="numGuest"> 2  </label>
+                            <label class="form-check-label radio-inline" for="numGuest3"><input type="radio" id="numGuest3" name="numGuest"> 3  </label>
+                            <label class="form-check-label radio-inline" for="numGuest4"><input type="radio" id="numGuest4" name="numGuest"> 4  </label>
+                            <label class="form-check-label radio-inline" for="numGuest5"><input type="radio" id="numGuest5" name="numGuest"> 5  </label>
+                            <label class="form-check-label radio-inline" for="numGuest6"><input type="radio" id="numGuest6" name="numGuest"> 6  </label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="dateTime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                        <div class="col-12 col-md-4">
+                            <input type="datetime" class="form-control" id="dateTime" name="dateTime" placeholder="Date">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <input type="datetime" class="form-control" id="dateTime" name="dateTime" placeholder="Time">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-2">
+                            <button type="submit" class="btn btn-primary">
+                                Reserve
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Tooltip-->
+
+<a class="btn bg-warning btn-block btn-sm" data-toggle="tooltip" data-html="true"
+title="Or Call Us at <br><strong> +852 12345678</strong>" data-placement="bottom" href="#reserveCard">
+    Reserve Table
+</a>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
